@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Generate the R16 PCB business card as a KiCad 10 project.
 
-Source of truth for layout: ../ref16.py (SVG mock-up, units mm, 85 x 55).
+Layout units: mm, board 85 x 55. Run from anywhere: python3 tools/build_card.py
+Needs KiCad 10 (pcbnew Python), qrcode, fontTools. Paths below are for Linux
+(KiCad footprint library and DejaVu fonts) - adjust LIB / font paths on Windows/macOS.
 Run with the system python3 (needs the KiCad 10 `pcbnew` module):
 
     python3 build_card.py

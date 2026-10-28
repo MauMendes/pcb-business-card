@@ -9,6 +9,16 @@ My personal business card as a PCB – and a pocket reference for the bench.
 ## Board
 85 × 55 mm · R3 corners · 2 layers · 0.8 mm FR-4 · black mask · white silk · ENIG
 
+## Cost (JLCPCB, Oct 2026)
+30 cards, 2 layers, 85 × 55 mm, 0.8 mm, black mask, before shipping:
+
+| Finish | Price | Per card |
+|---|---|---|
+| **ENIG** (gold) | €33.57 | ~€1.12 |
+| HASL (silver) | €15.80 | ~€0.53 |
+
+ENIG is recommended – the exposed gold copper is the design, and it doesn't oxidise.
+
 ## Make your own
 1. Open `oss_card.kicad_pro` in KiCad 10.
 2. Edit the front text and regenerate the QR (`the QR text in `tools/build_card.py`, then `python3 tools/build_card.py``).
