@@ -28,4 +28,7 @@ ENIG is recommended – the exposed gold copper is the design, and it doesn't ox
 Note: the 0.1 mm clearance demo sits at typical minimum spacing – keep it exact or widen to 0.13 mm.
 
 ## License
-Hardware: [CERN-OHL-P-2.0](https://ohwr.org/cern_ohl_p_v2.txt) · Scripts: MIT
+Copyright © 2026 Mauricio Mendes
+
+- **Hardware** (KiCad files, gerbers, footprints): [CERN-OHL-P-2.0](LICENSE) – permissive open hardware.
+- **Scripts** (`tools/`): [MIT](tools/LICENSE-MIT).
