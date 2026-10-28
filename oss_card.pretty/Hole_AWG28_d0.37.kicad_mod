@@ -1,0 +1,10 @@
+(footprint "Hole_AWG28_d0.37"
+	(version 20241229)
+	(generator "build_card")
+	(layer "F.Cu")
+	(descr "Plated hole, drill 0.37 mm, pad 0.87 mm (PCB business card)")
+	(property "Reference" "REF**" (at 0 -1.44 0) (layer "F.SilkS") (hide yes) (effects (font (size 1 1) (thickness 0.15))))
+	(property "Value" "Hole_AWG28_d0.37" (at 0 1.44 0) (layer "F.Fab") (hide yes) (effects (font (size 1 1) (thickness 0.15))))
+	(attr through_hole exclude_from_pos_files exclude_from_bom)
+	(pad "1" thru_hole circle (at 0 0) (size 0.87 0.87) (drill 0.37) (layers "*.Cu" "*.Mask"))
+)

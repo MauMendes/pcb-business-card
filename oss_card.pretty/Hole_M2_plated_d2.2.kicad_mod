@@ -1,0 +1,10 @@
+(footprint "Hole_M2_plated_d2.2"
+	(version 20241229)
+	(generator "build_card")
+	(layer "F.Cu")
+	(descr "Plated hole, drill 2.2 mm, pad 3.6 mm (PCB business card)")
+	(property "Reference" "REF**" (at 0 -2.80 0) (layer "F.SilkS") (hide yes) (effects (font (size 1 1) (thickness 0.15))))
+	(property "Value" "Hole_M2_plated_d2.2" (at 0 2.80 0) (layer "F.Fab") (hide yes) (effects (font (size 1 1) (thickness 0.15))))
+	(attr through_hole exclude_from_pos_files exclude_from_bom)
+	(pad "1" thru_hole circle (at 0 0) (size 3.6 3.6) (drill 2.2) (layers "*.Cu" "*.Mask"))
+)

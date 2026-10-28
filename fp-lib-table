@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "oss_card")(type "KiCad")(uri "${KIPRJMOD}/oss_card.pretty")(options "")(descr "card holes"))
+)

@@ -1,0 +1,8 @@
+*-backups/
+*.kicad_prl
+*.lck
+_autosave-*
+~*
+#auto_saved_files#
+__pycache__/
+verify/

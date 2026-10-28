@@ -1,0 +1,51 @@
+PCB BUSINESS CARD R16 - JLCPCB ORDER NOTES  (2026-10-28)
+=========================================================
+Upload: oss_card_gerbers_JLC.zip  (Gerber X2 + Excellon, KiCad 10.0.6)
+
+JLC settings
+  Base material ........ FR-4
+  Layers ............... 2
+  Dimensions ........... 85 x 55 mm (rounded corners R3, from Edge.Cuts)
+  PCB qty .............. 20 or 30
+  Product type ......... Industrial/Consumer electronics
+  Different design ..... 1
+  Delivery format ...... Single PCB
+  PCB thickness ........ 0.8 mm
+  PCB color ............ Black (solder mask)
+  Silkscreen ........... White
+  Surface finish ....... ENIG (1U")   <- the gold look depends on this, do not pick HASL
+  Outer copper ......... 1 oz
+  Via covering ......... Tented (there are no vias)
+  Min hole / trace ..... 0.37 mm / 0.15 mm (one intentional 0.10 mm gap, see below)
+  Remove order number .. "Specify a location" (preferred) or "Remove mark" (paid option).
+                         If using "Specify a location": no JLCJLCJLCJLC text is placed in the
+                         design yet. Ask JLC to put it on the BACK, under the inch ruler, or
+                         simply choose "Remove mark".
+  PCB assembly ......... NO. All pads are decorative. Nothing is soldered.
+  Stencil .............. NO. No paste layers are exported.
+
+Notes for the JLC engineer (paste into the order remark)
+  - Decorative business card. All SMD pads are unconnected and have no net. This is intentional.
+  - The back has one intentional 0.10 mm copper gap: the "<=30 V / 0.1" clearance demo
+    (two 1.6 x 0.8 mm bars). Please keep it as drawn. The pair shares one solder-mask
+    opening, because a 0.1 mm mask web is not manufacturable.
+  - Large exposed copper (ENIG) areas with mask openings are intentional (rulers, combs, lines, captions).
+  - All holes are plated. The small holes are a wire-gauge demo, so a tight tolerance is welcome.
+
+Holes (finished size = drill value in the file, all plated)
+  M2 2.20 / pad 3.6     M2.5 2.70 / pad 4.4     M3 3.20 / pad 5.2
+  AWG wire-gauge holes: finished = bare wire + 0.05 mm, rounded up to 0.01 mm
+    AWG28 wire 0.320 -> 0.37   pad 0.870
+    AWG26 wire 0.405 -> 0.46   pad 0.955
+    AWG24 wire 0.511 -> 0.57   pad 1.061
+    AWG22 wire 0.644 -> 0.70   pad 1.194
+    AWG20 wire 0.812 -> 0.87   pad 1.362
+    AWG18 wire 1.024 -> 1.08   pad 1.574
+  JLC PTH tolerance is about +0.13/-0.08 mm, so the smallest holes can end up a bit tight.
+
+Design-rule status (kicad-cli pcb drc)
+  0 errors, 0 warnings, 0 unconnected items. 46 exclusions, all "text_thickness":
+  KiCad flags thin glyph joins in the TrueType font (DejaVu). The real strokes are >= 0.2 mm:
+  silk labels = DejaVu Sans Bold, height 1.0 mm, width 0.8 -> stems 0.21 mm. All silk text is >= 1.0 mm high.
+  Copper spacing was checked on a copy with a net on every item (verify/): everything is >= 0.15 mm,
+  except the 0.10 mm demo pair (custom rule in oss_card.kicad_dru). Copper is >= 0.3 mm from the board edge.
